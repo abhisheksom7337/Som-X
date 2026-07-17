@@ -148,6 +148,7 @@ background:#312E81;
 .left h1 span{
 
     background:linear-gradient(90deg,#4F46E5,#7C3AED);
+    background-clip:text;
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 

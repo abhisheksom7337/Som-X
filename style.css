@@ -18,29 +18,23 @@ overflow-x:hidden;
 /* NAVBAR */
 
 nav{
-
-width:100%;
-
-padding:20px 8%;
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-position:fixed;
-
-top:0;
-
-left:0;
-
-background:rgba(255,255,255,.9);
-
-backdrop-filter:blur(12px);
-
-z-index:999;
-
+    position:fixed;
+    top:20px;
+    left:50%;
+    transform:translateX(-50%);
+    width:90%;
+    max-width:1400px;
+    height:75px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+    background:rgba(255,255,255,.65);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.3);
+    border-radius:20px;
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+    z-index:1000;
 }
 
 .logo{
@@ -1073,5 +1067,23 @@ transition:.3s;
 .faq-box:hover{
 
 transform:translateY(-8px);
+
+}
+#themeToggle{
+
+width:48px;
+height:48px;
+border:none;
+background:#EEF2FF;
+border-radius:50%;
+cursor:pointer;
+font-size:22px;
+transition:.3s;
+
+}
+
+#themeToggle:hover{
+
+transform:rotate(20deg);
 
 }

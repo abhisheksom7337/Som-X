@@ -1489,21 +1489,41 @@ transparent 70%);
 pointer-events:none;
 
 }
-/* Reset */
+/* =========================
+   GLOBAL MOBILE FIX
+========================= */
 
-*{
+*,
+*::before,
+*::after{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-/* Prevent horizontal scrolling */
+html{
+    width:100%;
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+}
 
-html,
 body{
     width:100%;
     max-width:100%;
     overflow-x:hidden;
+    position:relative;
+}
+
+/* Every section */
+
+section,
+header,
+footer,
+nav,
+main{
+    width:100%;
+    max-width:100%;
+    overflow:hidden;
 }
 
 /* Images */
@@ -1514,9 +1534,63 @@ img{
     display:block;
 }
 
-/* Sections */
+/* Containers */
 
-section{
+.container{
     width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 20px;
+}
+
+/* Prevent elements from overflowing */
+
+.hero,
+.problem,
+.solution,
+.showcase,
+.features,
+.roadmap,
+.survey,
+.faq,
+.footer{
+    width:100%;
+    max-width:100%;
     overflow:hidden;
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+body{
+    overflow-x:hidden;
+}
+
+.container{
+    padding:0 16px;
+}
+
+.right,
+.left,
+.hero-container,
+.showcase-right,
+.showcase-left{
+    width:100%;
+    max-width:100%;
+}
+
+.phone{
+    width:100%;
+    max-width:320px;
+    margin:auto;
+}
+
+.problem-grid,
+.solution-grid,
+.feature-grid,
+.trusted-grid{
+    grid-template-columns:1fr;
+}
+
 }

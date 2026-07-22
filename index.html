@@ -89,10 +89,8 @@ Placements and Campus Life together.
 
 <div class="buttons">
 
-<a href="#" class="primary">
-
-Join Waitlist
-
+<a href="#" class="waitlist-btn" id="openWaitlist">
+    🚀 Join Early Access
 </a>
 
 <a href="https://docs.google.com/forms/d/e/1FAIpQLScUlDun_rijmkhqNPFOe1Wq25kA4ID2jjW9z4bRIpqu3Mcb1w/viewform"
@@ -572,6 +570,72 @@ Absolutely. SomX is designed for colleges across India.
 </footer>
 
 <script src="script.js"></script>
+
+<!-- ================= WAITLIST MODAL ================= -->
+
+<div class="waitlist-modal" id="waitlistModal">
+
+    <div class="waitlist-card">
+
+        <button class="close-modal" id="closeWaitlist">&times;</button>
+
+        <div class="waitlist-logo">
+    <img src="assets/logo/logo.png" alt="SomX Logo">
+</div>
+
+        <h2>Join the SomX Waitlist</h2>
+
+        <p>
+            Be among the first students to experience India's Campus Super App.
+        </p>
+
+        <div class="benefits">
+
+            <div>✅ Early Access</div>
+            <div>✅ Beta Testing</div>
+            <div>✅ Product Updates</div>
+
+        </div>
+
+        <form id="waitlistForm">
+
+    <input
+        type="text"
+        id="name"
+        placeholder="Full Name"
+        required
+    >
+
+    <input
+        type="email"
+        id="email"
+        placeholder="Email Address"
+        required
+    >
+
+    <input
+        type="text"
+        id="college"
+        placeholder="College Name"
+        required
+    >
+
+    <button type="submit">
+        🚀 Join Waitlist
+    </button>
+
+</form>
+
+        <small>
+
+            No spam. Only important SomX updates.
+
+        </small>
+
+    </div>
+
+</div>
+
 
 </body>
 
